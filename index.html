@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
+    <title>WDD 231 | Home </title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large-base.css">
+    <script src="scripts/script.js" defer=""></script>
+    <meta name="description" content="Valerie Sanchez's WDD 131 home page, information about Valerie Sanchez and short description of El Salvador. ">
+    <meta name="author" content="Valerie Sanchez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 <body>
-    <h1>WDD 231</h1>
+    <header>
+        <h1>Valerie A. Sanchez</h1>
+    
+        <nav>
+            <div><button id="menu" aria-label="Open menu"></button></div>
+
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+
+                <li><a href="#" title="Chamber" >Chamber</a></li>
+
+                <li><a href="#" title="GitHub Profile" >GitHub Profile</a></li>
+
+                <li><a href="https://www.linkedin.com/" title="LinkedIn">LinkedIn</a></li>
+
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+
+        <section class="card">
+            <h2 class="subheadings">Course Work</h2>
+            <div class="cardcontent">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+      
+         
+                </ul>
+
+
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="subheadings">El Salvador</h2>
+            <div class="card-content">
+                <div id="center">
+                    <figure>
+                    <img src="images/lemur.jpg" alt="lemur">
+                    <figcaption>Zoo Lemur</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-3">
+            <h2 class="subheadings">Web and Computer Programming Certificate</h2>
+            <div class="card-content">
+
+                <div class="course-buttons">
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                  </div>
+                  
+                  <div id="course-list">
+                    <!-- will dynamically inserted here -->
+                  </div>
+                
+                  <p id="total-credits"></p>
+                
+            </div>
+    
+        </section>
+
+        </div>
+
+
+
+    </main>
+
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🦝 Valerie Sanchez 🦝</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
+
+
+<!-- An alternative to hosting your own normalize or reset CSS file is to use a content delivery network (CDN) reference.
+This particular reference has minimized the "normalize.css" file as indicated by the .min in the file name.
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" -->
+
+<!-- This is an HTML comment -->
