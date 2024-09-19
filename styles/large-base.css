@@ -16,30 +16,19 @@
     .container {
         min-width: 800px;
         display : grid;
-        grid-template-columns: 2fr 1fr; /* 2 columnas de igual tamaño */
+        grid-template-columns: 2fr 1fr; 
         gap : 20px;
         justify-content: center;
         max-width : 940px;
-        /* margin : 0 auto; */
         margin-bottom: 20px;
 
     }
     
     .card-3 {
-        grid-column: span 2; /* Ocupa 2 filas */
+        grid-column: span 2; 
 
     }
     
-
-    /* main {
-        display: flex;
-        justify-content : center;
-        align-items: center;
-        max-width : 1200px;
-        margin : 0 30px;
-        grid-template-rows: 100vh;
-
-        } */
 
     .card {
         border : black solid 1px;
