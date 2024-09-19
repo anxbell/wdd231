@@ -96,11 +96,7 @@ footer {
     padding: 10px 0;
 }
 
-img {
-    width: auto;
-    height: 400px;
-    padding: 10px;
-}
+
 
 .card, .card-3 {
     border : black solid 1px;
@@ -218,10 +214,10 @@ hr {
     text-align: center;
   }
 
-  /* #center img {
-    width: 350px;
-    height: auto;
-} */
+  #center img {
+    width: 305px;
+    height: 400px;
+}
 
   #center {
     display: flex;
@@ -230,6 +226,25 @@ hr {
     /* padding-bottom: 10px;
     padding-top: 10px; */
 }
+
+
+header img {
+
+    width: 160px;
+    height: 125px;
+    margin: 20px;
+
+}
+
+header img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-bottom: 10px;
+    padding-top: 10px; */
+}
+
+
 /* ---------- SMALL VIEW NAV --------- */
 
 /* ----------- HAM MENU ---------- */
@@ -268,6 +283,7 @@ hr {
         flex-direction: column;
         list-style: none;
         color: #eee;
+        background-color: rgb(43, 91, 180);
 
 
     
@@ -315,4 +331,20 @@ hr {
         text-decoration: none;
     }
     
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .header img {
+        width: 100px;
+        height: 75px;
+      }
+
+    .header h1 {
+        font-size: 1.7rem;
+        padding: 0 10px;
+    }
 }
