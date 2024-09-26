@@ -1,0 +1,29 @@
+{
+    "family_name": "Sanchez-Benitez",
+    "move_in_date": "2024-09-26",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+
+
+    "family_members": [
+        {
+            "name": "Marlon Ariel Sanchez",
+            "gender": "Male",
+            "birthdate": "1999-06-14"
+        },
+
+        {
+            "name": "Valerie Sanchez",
+            "gender": "Female",
+            "birthdate": "2002-12-12"
+        },
+
+        {
+            "name": "Karla Melani Benitez",
+            "gender": "Male",
+            "birthdate": "1999-06-14"
+        }
+
+
+    ]
+}
