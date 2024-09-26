@@ -101,51 +101,46 @@ const courses = [
     }
 ]
 
-// Dynamically show the courses
+
 function displayCourses(filter = 'all') {
     const courseList = document.getElementById('course-list');
-    courseList.innerHTML = ''; // Clear the list
+    courseList.innerHTML = ''; // Clear 
   
-    // Filter courses based on the filter type (all, CSE, WDD)
+
     const filteredCourses = courses.filter(course => {
       if (filter === 'all') return true;
       return course.subject === filter;
     });
   
-    // Calculate total credits
+
     const totalCredits = filteredCourses.reduce((acc, course) => acc + course.credits, 0);
   
-    // Loop through the filtered courses and create course cards
+
     filteredCourses.forEach(course => {
       const courseCard = document.createElement('div');
       courseCard.classList.add('course-card');
       
-      // Add a different style for completed courses
+
       if (course.completed) {
         courseCard.classList.add('completed');
       }
   
       courseCard.innerHTML = `
-        <h3>${course.subject} ${course.number}</h3>
-
+      <h3>${course.subject} ${course.number} - Credits ${course.credits} - ${course.completed ? 'Completed' : 'Not Completed'}</h3>
       `;
-//       <h3>${course.subject} ${course.number}: ${course.title}</h3>
-    //   <p>${course.description}</p>
-    //   <p><strong>Credits:</strong> ${course.credits}</p>
-    //   <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
-    //   <p class="completed-text">${course.completed ? 'Completed' : 'Not Completed'}</p>
+ 
   
       courseList.appendChild(courseCard);
     });
   
-    // Display the total credits
+
     document.getElementById('total-credits').textContent = `Total Credits: ${totalCredits}`;
   }
   
-  // Event listeners for the filter buttons
+  
   document.getElementById('all').addEventListener('click', () => displayCourses('all'));
   document.getElementById('cse').addEventListener('click', () => displayCourses('CSE'));
   document.getElementById('wdd').addEventListener('click', () => displayCourses('WDD'));
   
-  // Initial display of all courses
+
   displayCourses();
