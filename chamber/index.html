@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>WDD 231 | Chamber of commerce - Valerie Sanchez </title>
+    <meta name="description" content="WDD 231 | Chamber of commerce - Valerie Sanchez">
+    <meta name="author" content="Valerie Sanchez">
+
+
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/large-chamber.css">
+    <script src="scripts/script.js" defer=""></script>
+    <script src="scripts/weather.js" defer></script>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/chamber.ico">
+
+
+    <meta property="og:title" content="WDD 231 | Web Frontend Development I - Valerie Sanchez ">
+    <meta property="og:url" content="https://anxbell.github.io/wdd231/">
+    <meta property="og:description" content="WDD 231 Coursework and Web and Computer Programming Certificate requirements">
+    <meta property="og:image" content="https://anxbell.github.io/wdd231/images/lemur1.jpg">
+    <meta property="og:type" content="article">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="WDD 231 | Web Frontend Development I - Valerie Sanchez" />
+    <meta name="twitter:description" content="WDD 231 Coursework and Web and Computer Programming Certificate requirements" />
+    <meta name="twitter:image" content="https://anxbell.github.io/wdd231/images/lemur1.jpg" />
+
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="images/chamber-sv.jpg" alt="logo">
+
+            <div class="title">
+            
+                <h1>San Salvador</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+
+        </div>
+    
+        <nav>
+            <div><button id="menu" aria-label="Open menu"></button></div>
+
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+
+                <li><a href="#" title="Discover" >Discover</a></li>
+
+                <li><a href="#" title="Directory" >Directory</a></li>
+
+                <li><a href="#" title="Join">Join</a></li>
+
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 740px)" srcset="images/el-salvador_small.jpg">
+
+                <img src="images/El-Salvador.jpg" alt="el salvador" width="100%">
+            </picture>
+
+            <a href="#" class="cta-button" target="_blank">Join Us</a>
+ 
+        </section>
+
+        <h1 id="home">Home</h1>
+
+        <section class="home">
+            
+            <div class="item">
+
+                <h2>Upcoming Events</h2>
+                
+            </div>
+
+            <div class="item">
+                <h2>Current Weather</h2>
+
+                <div class="w-icon">
+
+                    <img src="images/clear-sky.png" alt="icon weather"></a>
+
+
+                    <div>
+  
+                        <p id="currentTemperature">Loading...</p>
+                        <p id="currentDescription">Loading...</p>
+                        <p id="highTemperature">High: Loading...</p>
+                        <p id="lowTemperature">Low: Loading...</p>
+                        <p id="humidity">Humidity: Loading...</p>
+                        <p id="sunrise">Sunrise: Loading...</p>
+                        <p id="sunset">Sunset: Loading...</p>
+                        <ul id="forecast"></ul>
+                    </div>
+                
+                </div>
+                
+            </div>
+
+            <div class="item">
+                <h2>Weather Forecast</h2>
+                <p id="weatherForecast">Loading forecast...</p>
+            </div>
+
+        </section>          
+
+
+        
+                <!-- Business name Section -->
+
+        <section class="spotlight">
+
+
+        <!-- js displayed -->
+         
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <p><strong>San Salvador  Chamber of Commerce</strong><br>
+              San Salvador<br>
+              SS, El Salbador<br>
+              <a href="mailto:info@timbuktucc.org">info@sschamberofcommerce.org</a><br>
+              (503) 2299-0595
+            </p>
+          </div>
+          <div class="footer-center">
+            <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube"></a>
+            <a href="https://x.com/?lang=en"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+          </div>
+          <div class="footer-right">
+            <p>WDD231 Chamber Project<br>
+              Valerie Sanchez<br>
+              &copy;<span id="currentyear"></span> San Salvador Chamber of Commerce
+            </p>    
+            <p id="lastModified"></p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
+
+

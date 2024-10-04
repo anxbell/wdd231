@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Inversiones Delgado",
+      "address": "Avenida Norte #105, San Salvador",
+      "phone": "+503 2222-2222",
+      "website": "https://www.inversionesdelgado.com",
+      "image": "delgado.png",
+      "membershipLevel": 3,
+      "description": "Investment firm in real estate and financial services."
+    },
+    {
+      "name": "Tech Innovators",
+      "address": "Calle El Pedregal, San Salvador",
+      "phone": "+503 3333-3333",
+      "website": "https://www.techinnovators.com",
+      "image": "tech_innovators.png",
+      "membershipLevel": 2,
+      "description": "Cutting-edge tech solutions for businesses of all sizes."
+    },
+    {
+      "name": "Café El Salvador",
+      "address": "Boulevard Los Heroes, San Salvador",
+      "phone": "+503 4444-4444",
+      "website": "https://www.cafeelsalvador.com",
+      "image": "cafe_elsalvador.png",
+      "membershipLevel": 1,
+      "description": "Premium Salvadoran coffee, grown in volcanic soil."
+    },
+    {
+      "name": "Santo Tourismo",
+      "address": "Colonia Escalon, San Salvador",
+      "phone": "+503 5555-5555",
+      "website": "https://www.santotourismo.com",
+      "image": "santo_tourismo.png",
+      "membershipLevel": 3,
+      "description": "Award-winning travel agency, specializing in custom tours of El Salvador."
+    },
+    {
+      "name": "Banco Salvador",
+      "address": "Centro Financiero, San Salvador",
+      "phone": "+503 6666-6666",
+      "website": "https://www.bancosalvador.com",
+      "image": "banco_salvador.png",
+      "membershipLevel": 2,
+      "description": "National bank providing a range of financial services."
+    },
+    {
+      "name": "El Salvador Exports",
+      "address": "Zona Industrial, San Salvador",
+      "phone": "+503 7777-7777",
+      "website": "https://www.elsalvadorexports.com",
+      "image": "elsalvador_exports.png",
+      "membershipLevel": 1,
+      "description": "Exporting Salvadoran products to the global market."
+    },
+    {
+      "name": "Hospital Metropolitano",
+      "address": "Calle San Antonio Abad, San Salvador",
+      "phone": "+503 8888-8888",
+      "website": "https://www.hospitalmetropolitano.com",
+      "image": "hospital_metropolitano.png",
+      "membershipLevel": 3,
+      "description": "Premier healthcare provider in San Salvador."
+    }
+  ]
+  
