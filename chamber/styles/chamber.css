@@ -37,11 +37,6 @@ nav {
     color: white; /* Change this based on your design */
 }
 
-.hero-image {
-    width: 100%; /* Make the image responsive */
-    height: auto;
-}
-
 .hero-content {
     position: absolute;
     top: 50%;
@@ -107,10 +102,7 @@ nav {
 
 }
 
-.hero-image {
-    width: 100%;
-    height: auto;
-}
+
 
 
 
@@ -210,8 +202,9 @@ footer {
         font-weight: bold;
         }
 
-
-
+.hero img {
+            width: 100%;
+        }
 
  
 
