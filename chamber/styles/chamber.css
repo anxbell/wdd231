@@ -42,28 +42,28 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px; /* Add some padding for better spacing */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    border-radius: 10px; /* Rounded corners for the content */
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
 }
 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(9, 9, 71); /* Change to your desired color */
+    background-color: rgb(9, 9, 71); 
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     margin-top: 20px;
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
-    position: absolute; /* Position button absolutely */
-    bottom: 20px; /* Distance from the bottom of the container */
-    right: 20px; /* Distance from the right of the container */
+    transition: background-color 0.3s ease; 
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
 }
 
 .cta-button:hover {
-    background-color: navy; /* Change to a hover color */
+    background-color: navy;
 }
 
 
@@ -102,13 +102,6 @@ nav {
 
 }
 
-
-
-
-
-
-
-
 main {
 
     justify-content : space-evenly;
@@ -124,8 +117,11 @@ main {
     gap: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+
     
 }
+
+
 
 .spotlight {
     margin: 10px 0 50px 0;
@@ -138,18 +134,17 @@ main {
 
 .item {
     background-color: aliceblue;
-    padding: 10px;
+    padding: 0;
     gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
 }
-
-
 
 
 #home {
     padding-left: 20px;
     margin-top: 10px;
 }
-
 
 
 footer {
@@ -167,10 +162,7 @@ footer {
     margin: 0 50px 0 50px;
   }
   
-  /* .footer-left,
-  .footer-right {
-    flex: 1;
-  } */
+
   
   .footer-center {
     /* flex: 1; */
@@ -206,21 +198,6 @@ footer {
             width: 100%;
         }
 
- 
-
-  #center img {
-    width: 305px;
-    height: 400px;
-}
-
-  #center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* padding-bottom: 10px;
-    padding-top: 10px; */
-}
-
 
 header img {
 
@@ -242,20 +219,43 @@ header img {
 
 
 hr {
+    display: none;
     border: none;
     border-top: 1px solid #000; 
     margin-bottom: 10px;     
     margin-top: 10px;  
   }
 
-  
+.subheading {
+    padding: 15px 0 15px 0;
+    text-align: center;
+    background-color: #266bb0;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.item p {
+    padding-left: 15px;
+    padding-right: 5px;
+    
+}
+
+.item p:nth-of-type(3) {
+    margin-bottom: 10px;
+}
+
+.w-icon p:nth-of-type(3) {
+    margin-bottom: 0;
+}
 
 
 /* ---------- SMALL VIEW NAV --------- */
 
 /* ----------- HAM MENU ---------- */
 
-@media (max-width: 740px ) {
+@media (max-width: 900px ) {
     #menu {
         font-size: 1.5rem;
         border: 0;
@@ -290,7 +290,7 @@ hr {
         flex-direction: column;
         list-style: none;
         color: #eee;
-        background-color: #000;
+        background-color: #266bb0;
 
 
     
@@ -360,9 +360,10 @@ hr {
     }
 
 
+
     .home, .spotlight {
         display : grid;
-        grid-template-columns: repeat(1, 1fr); /* 2 columnas de igual tamaño */
+        grid-template-columns: repeat(1, 1fr); 
         gap : 20px;
         justify-content : space-evenly;
         max-width : 1200px;
@@ -390,17 +391,12 @@ hr {
         text-align: center;
         
     }
-
-    .spotlight h3 {
-
-        border-color: #000;
-
-    }
     
     .item {
         background-color: aliceblue;
-        padding: 10px;
+        padding: 0;
         gap: 10px;
+
     }
 
     .footer-right {
@@ -424,23 +420,27 @@ hr {
 
     .w-icon div{
         width: auto;
-        margin-top: 10px;
         margin-left: 20px;
+        margin-bottom: 10px;
     }
 
     .hero-content {
-        text-align: center; /* Center text on small screens */
-        padding: 10px; /* Reduce padding on smaller screens */
+        text-align: center; 
+        padding: 10px; 
     }
 
     .cta-button {
-        font-size: 14px; /* Slightly smaller font size on small screens */
-        padding: 8px 16px; /* Adjust padding */
-        bottom: 10px; /* Adjust button position */
-        right: 10px; /* Adjust button position */
+        font-size: 14px; 
+        padding: 8px 16px; 
+        bottom: 10px; 
+        right: 10px;
     }
 
+    .home h2 {
+        text-align: center;
+        padding: 5px 0 5px 15px;
 
+    }
 
     
 

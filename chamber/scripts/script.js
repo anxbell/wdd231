@@ -43,7 +43,7 @@ function displayMembers(members) {
             const memberCard = document.createElement('div');
             memberCard.classList.add('member-card');
             memberCard.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name}" class="member-image">
+
                 <div class="member-details">
                     <h2>${member.name}</h2>
                     <p>${member.description}</p>
@@ -53,6 +53,7 @@ function displayMembers(members) {
                     <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
                 </div>
             `;
+            // <img src="images/${member.image}" alt="${member.name}" class="member-image">
             memberContainer.appendChild(memberCard);
         });
     }
@@ -76,7 +77,7 @@ function displaySpotlight(members) {
         spotlightItem.innerHTML = `
             <div class="subheading">
                 <h2>${member.name}</h2>
-                <h3>${member.description}</h3>
+                <h3>${member.description}<h3>
             </div>
             <hr>
             <p>Email: info@${member.name.toLowerCase().replace(/\s+/g, '')}.com</p>
