@@ -18,13 +18,13 @@
       "description": "Cutting-edge tech solutions"
     },
     {
-      "name": "Café El Salvador",
-      "address": "Boulevard Los Heroes, San Salvador",
-      "phone": "+503 4444-4444",
-      "website": "https://www.cafeelsalvador.com",
+      "name": "Café Santa Cruz",
+      "address": "RN 3E Km 10, San Francisco Chinameca",
+      "phone": "+503 7667 6465",
+      "website": "https://www.cafesantacruzsv.com",
       "image": "",
       "membershipLevel": 1,
-      "description": "Premium Salvadoran coffee"
+      "description": "Premium Salvadoran café"
     },
     {
       "name": "Santo Turismo",
@@ -57,10 +57,31 @@
       "name": "Hospital Pro-familia",
       "address": "Calle San Antonio Abad, San Salvador",
       "phone": "+503 8888-8888",
-      "website": "https://www.hospitalmetropolitano.com",
+      "website": "https://www.ads.org.sv/Profamilia/",
+      "image": "",
+      "membershipLevel": 3,
+      "description": "Premier healthcare provider"
+    },
+
+    {
+      "name": "Hospital 2",
+      "address": "Calle San Antonio Abad, San Salvador",
+      "phone": "+503 8888-8888",
+      "website": "https://www.ads.org.sv/Profamilia/",
+      "image": "",
+      "membershipLevel": 3,
+      "description": "Premier healthcare provider"
+    },
+
+    {
+      "name": "Hospital 3",
+      "address": "Calle San Antonio Abad, San Salvador",
+      "phone": "+503 8888-8888",
+      "website": "https://www.ads.org.sv/Profamilia/",
       "image": "",
       "membershipLevel": 3,
       "description": "Premier healthcare provider"
     }
+
   ]
   

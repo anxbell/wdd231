@@ -46,14 +46,17 @@ function displayMembers(members) {
 
                 <div class="member-details">
                     <h2>${member.name}</h2>
-                    <p>${member.description}</p>
-                    <p><strong>Address:</strong> ${member.address}</p>
-                    <p><strong>Phone:</strong> ${member.phone}</p>
-                    <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-                    <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+
+                    <p><a href="${member.website}" target="_blank"> Visit website</a></p>
+
+
                 </div>
             `;
             // <img src="images/${member.image}" alt="${member.name}" class="member-image">
+            // <h3>${member.description}</h3>
+            //                    <p>Status: ${getMembershipLevel(member.membershipLevel)}</p>
             memberContainer.appendChild(memberCard);
         });
     }
@@ -80,9 +83,10 @@ function displaySpotlight(members) {
                 <h3>${member.description}<h3>
             </div>
             <hr>
-            <p>Email: info@${member.name.toLowerCase().replace(/\s+/g, '')}.com</p>
             <p>Phone: ${member.phone}</p>
             <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+            <p> Membership level:  ${getMembershipLevel(member.membershipLevel)}</p>
+            <br>
         `;
         spotlightContainer.appendChild(spotlightItem);
     });

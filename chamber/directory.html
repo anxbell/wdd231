@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/large-chamber.css">
     <script src="scripts/script.js" defer=""></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/list.js" defer=""></script>
+
 
 
 
@@ -22,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
     <link rel="icon" href="images/chamber.ico">
 
 
@@ -52,7 +54,7 @@
             <div><button id="menu" aria-label="Open menu"></button></div>
 
             <ul class="navigation">
-                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="https://anxbell.github.io/wdd231/chamber/" title="Home">Home</a></li>
 
                 <li><a href="#" title="Discover" >Discover</a></li>
 
@@ -67,8 +69,6 @@
     </header>
 
     <main>
-
-
         <section class="hero">
             <picture>
                 <source media="(max-width: 740px)" srcset="images/el-salvador_small.jpg">
@@ -81,60 +81,16 @@
  
         </section>
 
-        <h1 id="home">Home</h1>
-
-        <section class="home">
-            
-            <div class="item">
-
-                <h2>Upcoming Events</h2>
-                
-            </div>
-
-            <div class="item">
-                <h2>Current Weather</h2>
-
-                <div class="w-icon">
-
-                    <img src="images/clear-sky.png" alt="icon weather">
+        <div class="menu">
+            <button id="grid">☷</button>
+            <button id="list">☰</button>
+        </div>
 
 
-                    <div>
-  
-                        <p id="currentTemperature">Loading...</p>
-                        <p id="currentDescription">Loading...</p>
-                        <p id="highTemperature">High: Loading...</p>
-                        <p id="lowTemperature">Low: Loading...</p>
-                        <p id="humidity">Humidity: Loading...</p>
-                        <p id="sunrise">Sunrise: Loading...</p>
-                        <p id="sunset">Sunset: Loading...</p>
-                        <ul id="forecast"></ul>
-                    </div>
-                
-                </div>
-                
-            </div>
-
-            <div class="item">
-                <h2>Weather Forecast</h2>
-                <p id="weatherForecast">Loading forecast...</p>
-            </div>
-
-        </section>          
-
-
-        
-                <!-- Business name Section -->
-
-        <section class="spotlight">
-
-
-        <!-- js displayed -->
-         
+        <section id="member-container" class="grid">
 
 
         </section>
-
     </main>
 
 
