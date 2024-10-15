@@ -105,8 +105,12 @@ nav {
     text-decoration: underline;
 }
 
-.navigation a:visited {
-    color: yellow;
+
+
+.current {
+
+    font-weight: bold; 
+
 }
 
 .hero {
@@ -404,10 +408,292 @@ hr {
 
 }
 
+/* ---------- Join Us Page -----------*/
 
-/* ---------- SMALL VIEW NAV --------- */
+.join-us {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+    
+    
+}
 
-/* ----------- HAM MENU ---------- */
+.join-form {
+    border: 2px solid rgba(0, 0, 85, 0.87);
+    border-radius: 0.3rem;
+
+}
+
+#levels {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0px 70px;
+    margin-bottom: 50px;
+
+}
+
+.membership-card {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-radius: 0.35rem;
+    opacity: 0; /* Start hidden */
+    transform: scale(0.9); /* Slightly smaller */
+    animation: bounceIn 0.5s ease forwards; /* Animation for bouncing */
+    background-color: #f0f0f0; /* Default background color */
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0; 
+        transform: scale(0.9); /* Start smaller */
+        background-color: #e0e0e0; /* Start with a lighter color */
+    }
+    50% {
+        opacity: 1; 
+        transform: scale(1.1); /* Slightly grow */
+        background-color: #d0d0d0; /* Change to a different color */
+    }
+    100% {
+        opacity: 1; 
+        transform: scale(1); /* End at original size */
+        background-color: #f0f0f0; /* End with original color */
+    }
+}
+
+/* Optional: Add transition delay for staggered effect */
+.membership-card:nth-child(1) { animation-delay: 0s; }
+.membership-card:nth-child(2) { animation-delay: 0.1s; }
+.membership-card:nth-child(3) { animation-delay: 0.2s; }
+.membership-card:nth-child(4) { animation-delay: 0.3s; }
+
+
+
+.membership-card p {
+    font-weight: 500;
+}
+
+#levels h1 {
+    margin-top: 0;
+    padding-top: 0;
+
+}
+
+/*---------------- colors -------------- */
+
+.membership-card.np {
+    background: linear-gradient(135deg, #0056b3 0%, #c1e1ff 50%, #003f7f 100%);
+    color: black; /* Light text for contrast */
+    border: 1px solid #003f7f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes cardEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    50% {
+        opacity: 0.5; /* Midway opacity */
+        transform: translateY(10px); /* Move up a bit */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Back to original position */
+    }
+}
+
+
+.membership-card.bronze {
+    background: linear-gradient(135deg, #cd7f32 0%, #ffffff 50%, #a65e2e 100%);
+    color: black;
+    border: 1px solid #8c5b29;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.membership-card.silver {
+    background: linear-gradient(135deg, #c0c0c0 0%, #ffffff 50%, #a8a8a8 100%);
+
+    color: black;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.membership-card.gold {
+
+    background: linear-gradient(135deg, #ffd700 0%, #ffffff 50%, #ffcc00 100%);
+    color: black;
+    border: 1px solid #d4a017;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .bronze:hover, .silver:hover, .gold:hover, .np:hover{
+    opacity: 0.9;
+    transform: scale(1.05); /* Slight zoom effect */
+    cursor: pointer;
+  }
+
+
+  dialog {
+    border: 2px solid #312e2e; /* Remove default border */
+    border-radius: 10px;
+    padding: 20px; /* Remove default padding */
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 750px;
+    position: fixed; /* Change to fixed positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the width/height */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+
+    padding: 1rem;
+    border-top-left-radius: 0.5rem; /* Rounded corners */
+    border-top-right-radius: 0.5rem;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5; /* Improve readability */
+}
+
+dialog button {
+    position: absolute;
+    border: none;
+    color: #000000;
+    top: 10px; /* Adjust to position it correctly */
+    right: 17px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem; /* Make the close button larger */
+}
+.modal-body h2 {
+    text-align: left;
+}
+
+.modal-header {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.modal-body  ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px; 
+    margin: 10px 0; 
+    color: #333; 
+    font-size: 1rem; 
+}
+
+.modal-body  li {
+
+    line-height: 1.5; /* Improve readability */
+    padding-left: 0; /* Additional padding for each list item */
+    width: fit-content;
+}
+
+form {
+    margin: 1rem 2%;
+
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 70);
+    padding-top: .2rem;
+  }
+
+form h1 {
+      font-size: 1.4rem;
+      color: rgb(0, 0, 85);
+      margin: 0.1rem 0 .7rem 0;
+      text-align: center;
+
+  }
+
+  input[type=text],
+  input[type=tel],
+  input[type=date],
+  input[type=email],
+  select {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1rem;
+      color: #3D405B;
+      width: 100%;
+  }
+
+  input:required {border-left-color: #d70000;
+      border-left-width: 5px;}
+  input:focus {border-left-color: rgb(29, 69, 177); outline:none;}
+  input:required:valid{border-left-color: green;}
+
+
+
+
+  input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #1f71c2;
+    color: white;
+    border-radius: 0.5rem;
+    padding: .75rem 3.5rem;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    display: flex;
+    transition: background 0.3s ease;
+
+
+  }
+
+  input[type=submit]:hover {
+
+      background-color: rgb(22, 49, 122);
+      color: white;
+      cursor: pointer;
+  }
+
+  #results {
+      background-color: #F4F1DE;
+      padding: 0 1rem;
+      border: 1px solid #E07A5F;
+      border-radius: 6px;
+  }
+
+  textarea {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      font-size: 1rem;
+      width: 100%;
+      height: 5rem;
+  }
+
+
 
 @media (max-width: 900px ) {
     #menu {
@@ -420,8 +706,7 @@ hr {
         right: 1rem;
         padding-top: 7px;
         cursor: pointer;
-    
-    
+ 
     }
     
     #menu::before {
@@ -445,14 +730,10 @@ hr {
         list-style: none;
         color: #eee;
         background-color: #266bb0;
-
-
-    
     }
     
     .navigation.open {
         margin-top: 20px;
-
 
     }
     .navigation.open li {
@@ -462,14 +743,12 @@ hr {
 
     }
 
-
     .navigation a {
         display: none;
         padding: 1rem;
         text-align: center;
         text-decoration: none;
         color: #fff;
-    
     }
     .navigation a:hover {
     
@@ -477,8 +756,7 @@ hr {
         text-decoration: underline;
         background-color: var(--light-background-color);
     }
-    
-    
+     
     .open a {
         display: block;
     }
@@ -494,7 +772,6 @@ hr {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-
       }
 
       .header img {
@@ -508,13 +785,10 @@ hr {
         padding: 0 10px;
     }
 
-
     .title h1 {
         padding: 0;
     }
 
-
-    /* #member-container  */
     .home, .spotlight {
         display : grid;
         grid-template-columns: repeat(1, 1fr); 
@@ -531,8 +805,7 @@ hr {
         text-align: center; /* Center-align for mobile view */
       }
     
-      .footer-left,
-      .footer-right {
+      .footer-left,.footer-right {
         margin-bottom: 20px;
       }
     
@@ -595,19 +868,15 @@ hr {
         padding: 5px 0 5px 15px;
 
     }
-/* 
-    #member-container {
-        gap: 10px;
-
-    } */
 
     .member-card {
         border-radius: 0px;
     }
 
     .list section:nth-child(even) {
+
         background-color: #bed; 
-        /*  list */
+
     }
 
     .grid {
@@ -617,8 +886,6 @@ hr {
         display: flex;
         flex-direction: column;
         height: 2200px;
-
-        
     }
 
     .list {
@@ -637,7 +904,26 @@ hr {
         padding: 20px 0px;
         
     }
-    
-      
+
+    .join-us {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    #levels {
+        padding: 0;
+        height: 550px;
+    }
+    .membership-card {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .modal-body li {
+        text-align: left;
+    }
+
 
 }

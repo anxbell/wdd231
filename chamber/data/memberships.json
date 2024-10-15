@@ -1,0 +1,43 @@
+[
+    {
+      "title": "NP Membership",
+      "description": "The NP Membership is designed for nonprofit organizations. This membership level provides essential support and resources without any fees, allowing nonprofits to focus on their mission and impact.",
+      "benefits": [
+        "Access to exclusive nonprofit resources and tools.",
+        "Networking opportunities with other nonprofits.",
+        "Invitations to special nonprofit events and workshops.",
+        "Regular newsletters with updates and best practices."
+      ]
+    },
+    {
+      "title": "Bronze Membership",
+      "description": "The Bronze Membership is perfect for small businesses and individuals seeking to enhance their professional development. This membership offers a balance of affordability and valuable resources.",
+      "benefits": [
+        "Access to online training courses and webinars.",
+        "Discounted rates for events and conferences.",
+        "Monthly newsletter with industry news and tips.",
+        "Members-only community forum for networking and support."
+      ]
+    },
+    {
+      "title": "Silver Membership",
+      "description": "The Silver Membership provides more advanced resources for growing organizations and professionals looking to make a significant impact in their field. This tier includes additional benefits tailored to your needs.",
+      "benefits": [
+        "All Bronze Membership benefits.",
+        "Priority access to workshops and training sessions.",
+        "One-on-one mentorship opportunities.",
+        "Increased discounts on events and merchandise."
+      ]
+    },
+    {
+      "title": "Gold Membership",
+      "description": "The Gold Membership is the ultimate level for organizations and individuals who are serious about their professional growth and networking opportunities. This premium membership offers the highest level of support and resources.",
+      "benefits": [
+        "All Silver Membership benefits.",
+        "Exclusive access to premium content and resources.",
+        "Invitations to VIP networking events and dinners.",
+        "Personal consultations with industry leaders and experts.",
+        "Enhanced visibility and promotion opportunities for your organization."
+      ]
+    }
+]

@@ -126,8 +126,13 @@ function displayCourses(filter = 'all') {
       }
   
       courseCard.innerHTML = `
-      <h3>${course.subject} ${course.number} - Credits ${course.credits} - ${course.completed ? 'Completed' : 'Not Completed'}</h3>
+      <h3>${course.subject} ${course.number}</h3>
       `;
+
+    // Add event listener to open modal with course details
+        courseCard.addEventListener('click', () => {
+        displayCourseDetails(course); // Call the function to display course details
+    });
  
   
       courseList.appendChild(courseCard);
@@ -144,3 +149,43 @@ function displayCourses(filter = 'all') {
   
 
   displayCourses();
+
+
+
+function displayCourseDetails(course) {
+
+
+    const courseDetails = document.getElementById("course-details");
+
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal"> &#10006 </button>
+       <div class="modal-header">
+            <h2>${course.subject} ${course.number}</h2>
+            <h3>${course.title}</h3>
+        </div>
+        <div class="modal-body">
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Certificate:</strong> ${course.certificate}</p>
+            <p>${course.description}</p>
+            <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        </div>
+        `
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById("closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+      // Event listener to close the modal when clicking outside the modal
+    window.addEventListener('click', (event) => {
+        if (event.target === courseDetails) {
+        courseDetails.close();
+        }
+    });
+
+
+
+
+}
