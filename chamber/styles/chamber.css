@@ -417,8 +417,7 @@ hr {
     grid-template-columns: 1fr 1fr;
     padding: 0 10px;
     margin: 40px auto;
-    max-width: 1200px;
-    
+    max-width: 1200px;  
     
 }
 
@@ -492,22 +491,6 @@ hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes cardEntrance {
-    0% {
-        opacity: 0;
-        transform: translateY(20px); /* Start slightly below */
-    }
-    50% {
-        opacity: 0.5; /* Midway opacity */
-        transform: translateY(10px); /* Move up a bit */
-    }
-    100% {
-        opacity: 1; /* Fully visible */
-        transform: translateY(0); /* Back to original position */
-    }
-}
-
-
 .membership-card.bronze {
     background: linear-gradient(135deg, #cd7f32 0%, #ffffff 50%, #a65e2e 100%);
     color: black;
@@ -531,8 +514,7 @@ hr {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-  
-  .bronze:hover, .silver:hover, .gold:hover, .np:hover{
+.bronze:hover, .silver:hover, .gold:hover, .np:hover{
     opacity: 0.9;
     transform: scale(1.05); /* Slight zoom effect */
     cursor: pointer;
