@@ -26,7 +26,8 @@ showInfo.innerHTML = `
     <p>${show("first")} ${show("last")}</p>
     <p>Email: ${show("email")}</p>
     ${show("phone") ? `<p>Phone: ${show("phone")}</p>` : ''}
-    ${show("organizationTitle") ? `<p>Business: ${show("organizationTitle")}</p>` : ''}
+    ${show("organizationTitle") ? `<p>Organizational title: ${show("organizationTitle")}</p>` : ''}
+    ${show("organization") ? `<p>Business/Organization: ${show("organization")}</p>` : ''}
     <p>Membership level: ${show("membership") || "N/A"}</p>
 `;
 

@@ -645,10 +645,14 @@ form h1 {
       width: 100%;
   }
 
-  input:required {border-left-color: #d70000;
-      border-left-width: 5px;}
+  input:required, select:required {
+        border-left-color: #d70000;
+        border-left-width: 5px;
+    }
+
+
   input:focus {border-left-color: rgb(29, 69, 177); outline:none;}
-  input:required:valid{border-left-color: green;}
+  input:required:valid,select:required:valid{border-left-color: green;}
 
 
 
