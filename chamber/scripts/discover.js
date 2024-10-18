@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+
+    hamButton.addEventListener('click', function() {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    });
+
+});
+
 function calculateDaysBetween(lastVisit) {
     const currentDate = new Date();
     const previousDate = new Date(lastVisit);
