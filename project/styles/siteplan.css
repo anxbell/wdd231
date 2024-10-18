@@ -1,0 +1,161 @@
+:root {
+    --color-warm-yellow: #F4E2A0;
+    --color-muted-green: #639c2d;
+    --color-soft-peach: #F2C2B6;
+    --color-creamy-white: #FAF3E0;
+    --color-deep-forest-green: #1f380c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------- HEADER --------- */
+header {
+    color: var(--color-warm-yellow);
+    background-color: var(--color-deep-forest-green);
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+/* ---------- HEADINGS ------------ */
+h1, h2, h3, figcaption {
+
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--color-creamy-white);
+}
+
+h2 {
+    padding: 10px 0;
+}
+
+/* --------- BODY ---------- */
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    width : 100%;
+    max-width : 750px;
+    margin : 0 auto;
+    padding-top : 0;
+    padding-bottom: 0;
+    font-size: 1rem;
+
+}
+
+/* ---------- MAIN ----------- */
+
+main {
+    padding: 30px 45px;
+    text-align: justify;
+    background-color: #eeeee0;
+    border-radius: 2px;
+}
+
+
+.description p {
+    margin-bottom: 15px;
+}
+
+.description h2 {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.schema {
+    font-size: 0.65rem;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 15px;
+    
+}
+
+.schema div {
+    height: 200px;
+    padding: 100px 20px;
+}
+
+.schema div:first-child {background-color: var(--color-warm-yellow);}
+.schema div:nth-child(2) {background-color: var(--color-muted-green);}
+.schema div:nth-child(3) {background-color: var(--color-soft-peach);}
+.schema div:nth-child(4) {background-color: var(--color-creamy-white);}
+.schema div:nth-child(5) {
+    background-color: var(--color-deep-forest-green);
+    color: var(--color-creamy-white);
+}
+
+/*----------- FOOTER --------------*/
+
+footer {
+
+    margin-top: 20px;
+    background-color: var(--color-warm-yellow);
+    color: #000; /* White */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 2px 2px 0px 0px;
+    margin-bottom: 0;
+
+}
+
+#lastModified {
+    color: rgb(49, 42, 42);
+}
+
+
+.center img {
+    width: 100%;
+    height: fit-content;
+    
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.center figcaption {
+    margin-top: 5px;
+}
+
+#georgia {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+#ds {
+    font-family: "Dancing Script", serif;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+@media (max-width: 740px) {
+
+    .schema {
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        
+    }
+
+    .schema div {
+        height: 100px;
+        padding: 30px 0;
+        width: 100%;
+    }
+
+} 
