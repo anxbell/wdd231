@@ -1,0 +1,143 @@
+@media (max-width: 740px) {
+    :root {
+        --color-warm-yellow: #F4E2A0;
+        --color-muted-green: #639c2d;
+        --color-soft-peach: #F2C2B6;
+        --color-creamy-white: #FAF3E0;
+        --color-deep-forest-green: #1f380c;
+    }
+
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding-top: 7px;
+        cursor: pointer;
+        transition: transform 0.3s ease; /* Add scale transition for the button */
+    }
+
+    .current {
+        border-bottom: none;
+        font-weight: bold;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "✖";
+    }
+
+    /* Mobile Navigation Styles */
+    .navigation {
+        max-height: 0; /* Start collapsed */
+        overflow: hidden; /* Hide overflow */
+        flex-direction: column;
+        list-style: none;
+        color: #000;
+        background-color: var(--color-creamy-white);
+        align-items: center;
+        width: 100%;
+        opacity: 0; /* Start as invisible */
+        transform: translateY(-20px); /* Start slightly above */
+        transition: max-height 0.5s ease, opacity 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    }
+
+    .navigation.open {
+        max-height: 500px; /* Adjust this value as needed */
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Slide down to its original position */
+    }
+
+    .navigation li {
+        width: 100%; /* Ensure each menu item fills the container */
+        text-align: center;
+        font-size: 1.05rem;
+        transform: translateY(-10px); /* Start items slightly above */
+        opacity: 0; /* Start items invisible */
+        transition: transform 0.3s ease, opacity 0.3s ease; /* Transition for items */
+    }
+
+    .navigation.open li {
+        transform: translateY(0); /* Slide down to their position */
+        opacity: 1; /* Fade in items */
+    }
+
+    .navigation a {
+        padding: 1rem;
+        display: block;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .navigation a:hover {
+        background-color: var(--color-deep-forest-green); /* Change background color on hover */
+        color: var(--color-creamy-white);
+    }
+
+    /* Title Styling */
+    .title h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center; /* Center-align for mobile view */
+    }
+
+    .footer-left,
+    .footer-right {
+        margin-bottom: 20px;
+    }
+
+    .footer-center {
+        justify-content: center;
+    }
+
+    .spotlight h2,
+    .spotlight h3 {
+        text-align: center;
+    }
+
+    .item {
+        padding: 0;
+        gap: 10px;
+    }
+
+    .footer-right {
+        margin: 20px 0 0 0;
+    }
+
+    .section-1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        align-items: center;
+        gap: 25px;
+    }
+
+    #news {
+        margin-top: 20px;
+    }
+
+    #news h1 {
+        font-size: 1.7rem;
+    }
+
+    .section-1:first-child {
+        padding-bottom: 20px;
+    }
+}
