@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Roses",
+        "description": "Classic, versatile flowers known for their fragrance and elegance, ideal for romantic gestures.",
+        "benefits": [
+            "Available in various colors",
+            "Long-lasting blooms",
+            "Symbol of love and admiration"
+        ],
+        "weather": "Best in moderate climates; avoid extreme heat or frost.",
+        "membershipLevel": "gold"
+    },
+    {
+        "title": "Daisies",
+        "description": "Bright, cheerful flowers perfect for casual arrangements and bringing joy to any setting.",
+        "benefits": [
+            "Low maintenance",
+            "Brightens any room",
+            "Great for indoor and outdoor arrangements"
+        ],
+        "weather": "Prefers cooler temperatures, ideal in spring and early summer.",
+        "membershipLevel": "silver"
+    },
+    {
+        "title": "Lavender",
+        "description": "Known for its calming scent, lavender is perfect for relaxation and stress relief.",
+        "benefits": [
+            "Soothing aroma",
+            "Can be used dried or fresh",
+            "Attracts pollinators"
+        ],
+        "weather": "Thrives in warm, sunny climates with well-drained soil.",
+        "membershipLevel": "bronze"
+    },
+    {
+        "title": "Wildflowers",
+        "description": "A mix of native flowers that bring a rustic, natural charm to arrangements.",
+        "benefits": [
+            "Easy to care for",
+            "Diverse colors and shapes",
+            "Supports local ecosystems"
+        ],
+        "weather": "Adaptable to a wide range of climates, suitable for wild landscapes.",
+        "membershipLevel": "np"
+    }
+]

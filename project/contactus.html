@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/ethereal-form.css">
+    <link rel="stylesheet" href="styles/ethereal.css">
+    <link rel="stylesheet" href="styles/ethereal-large.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore our diverse collection of stunning floral arrangements at Ethereal Blooms. Find the perfect bouquet for any occasion.">
+    <meta name="keywords" content="flower catalog, floral arrangements, Ethereal Blooms, bouquets, gifts, seasonal flowers">
+    <meta name="author" content="Valerie Sanchez">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ethereal Blooms | Catalog">
+    <meta property="og:description" content="Browse our beautiful flower catalog and choose the perfect arrangement for your special moments.">
+    <meta property="og:image" content="https://anxbell.github.io/wdd231/project/images/section-1.webp"> 
+    <meta property="og:url" content="https://anxbell.github.io/wdd231/project/contactus.html"> 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ethereal Blooms">
+    <script src="scripts/menu.js" defer=""></script>
+    <script src="scripts/contact-us.js" defer=""></script>
+    <link rel="icon" href="images/favicon.ico">
+    <title>Ethereal Blooms | Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="title"> 
+            <h1>Ethereal Blooms</h1>
+        </div>
+        <nav>
+            <div><button id="menu" aria-label="Open menu"></button></div>
+            <ul class="navigation">
+                <li><a href="index.html" title="index">Home</a></li>
+                <li><a href="catalog.html" title="Catalog">Catalog</a></li>
+                <li><a href="contactus.html" title="Contact Us" class="current">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-------------- main class -- main content -------------->
+        <div class="join-us">
+            <section class="join-form">
+                <form method="GET" action="thankyou.html" class="designOne">
+                    <h1>Contact Us for your Ethereal Bouquets</h1>
+                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                    </label>
+                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                    </label>
+                    <label>Email <input type="email" name="email" required placeholder="yourname@email.com" title="Email Adress" autocomplete="email">
+                    </label>
+                    <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234">
+                    </label>
+                    <label for="membership">Reason: 
+                        <select id="membership" name="membership" title="Select reason" required>
+                            <option value="" selected disabled>Select flower arrangement</option>
+                            <option value="Bouquet Arrangement">Bouquet Arrangement</option>
+                            <option value="Single Stem Flower">Single Stem Flower</option>
+                            <option value="Mixed Flowers Arrangement">Mixed Flowers Arrangement</option> <!-- Ensure the value is correct -->
+                            <option value="Seasonal Special Bouquet">Seasonal Special Bouquet</option>
+                        </select>
+                    </label>
+                    
+                    <label for="description">Other inquries: <textarea id="description" name="description" title="organization description"></textarea>
+                    </label>
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                    <input type="submit" value="Contact Us">
+                </form>
+            </section>
+
+
+            <section id="levels">
+                <h1>About our bestsellers</h1>
+                <dialog id="membership-details"></dialog>
+            </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p><strong>Ethereal Blooms</strong><br>
+                Av. De La Revolucion<br>
+                San Salvador, El Salvador<br>
+                <a href="mailto:info@timbuktucc.org">etherealblooms@gmail.com</a><br>
+                (503) 2299-0595
+                </p>
+            </div>
+            <div class="footer-center">
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube"></a>
+                <a href="https://x.com/?lang=en"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-right">
+                <p>&copy;<span id="currentyear"></span> Ethereal Blooms Flower Shop</p>    
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

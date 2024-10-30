@@ -45,43 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Fetch flower data from JSON
-fetch('flowers.json')
-    .then(response => response.json())
-    .then(data => {
-        displayFlowers(data);
-    })
-    .catch(error => console.error('Error fetching data:', error));
 
-function displayFlowers(flowers) {
-    const flowerList = document.getElementById('flower-list');
-    flowers.forEach(flower => {
-        const flowerItem = document.createElement('div');
-        flowerItem.className = 'flower-item';
-        flowerItem.innerHTML = `
-            <h3>${flower.name}</h3>
-            <p>${flower.shortDescription}</p>
-            <button onclick="showDialog('${flower.name}', '${flower.description}')">More Info</button>
-        `;
-        flowerList.appendChild(flowerItem);
-    });
-}
-
-function showDialog(title, description) {
-    document.getElementById('dialog-title').innerText = title;
-    document.getElementById('dialog-description').innerText = description;
-    document.getElementById('flower-dialog').style.display = 'block';
-}
-
-document.getElementById('close-dialog').onclick = function() {
-    document.getElementById('flower-dialog').style.display = 'none';
-}
-
-// Close the dialog when clicking outside of it
-window.onclick = function(event) {
-    const dialog = document.getElementById('flower-dialog');
-    if (event.target === dialog) {
-        dialog.style.display = 'none';
-    }
-}
 

@@ -11,7 +11,7 @@
     {
         "name": "Sunshine Delight",
         "price": "$30",
-        "spotlight": false,
+        "spotlight": true,
         "image": "images/boquet2.webp",
         "description": "Bright and cheerful flowers like sunflowers and daisies that bring a burst of happiness to any room. Ideal for gift-giving or to cheer yourself up on a gloomy day.",
         "dateAdded": "2024-01-15",
@@ -29,7 +29,7 @@
     {
         "name": "Blissful Blooms",
         "price": "$28",
-        "spotlight": false,
+        "spotlight": true,
         "image": "images/boquet4.webp",
         "description": "A delightful mix of seasonal flowers that brings joy and freshness to any occasion. Perfect for housewarming gifts or simply to add a splash of color to your home.",
         "dateAdded": "2024-01-25",
