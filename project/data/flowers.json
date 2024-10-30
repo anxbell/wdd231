@@ -89,15 +89,7 @@
         "dateAdded": "2024-02-25",
         "season": "Spring"
     },
-    {
-        "name": "Tulip Ensemble",
-        "price": "$38",
-        "spotlight": true,
-        "image": "images/boquet11.webp",
-        "description": "An elegant arrangement of tulips in various colors, making it a stunning centerpiece for springtime celebrations and gatherings.",
-        "dateAdded": "2024-03-01",
-        "season": "Spring"
-    },
+    
     {
         "name": "Vibrant Bouquet",
         "price": "$27",
