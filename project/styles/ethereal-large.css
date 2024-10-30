@@ -124,9 +124,8 @@
     .image-grid {
         display: flex;
         flex-direction: column;
-        padding-left: 0;
+        padding: 2rem 0;
         align-items: center;
-        gap: 25px;
     }
 
     #news {
@@ -140,4 +139,19 @@
     .section-1:first-child {
         padding-bottom: 20px;
     }
+
+    .bouquet-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem; 
+        padding: 1rem;
+        justify-items: center;
+        font-size: 0.9rem;
+    }
+
+    .item-name {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/ethereal.css">
+    <link rel="stylesheet" href="styles/ethereal-large.css">
+    <meta name="description" content="Ethereal's Flower Shop Site Plan Page">
+    <script src="scripts/menu.js" defer=""></script>
+    <script src="scripts/catalog.js" defer=""></script>
+    <meta name="author" content="Valerie Sanchez">
+    <title>Ethereal Blooms | Catalog</title>
+</head>
+<body>
+    <header>
+        <div class="title"> 
+            <h1>Ethereal Blooms</h1>
+        </div>
+        <nav>
+            <div><button id="menu" aria-label="Open menu"></button></div>
+            <ul class="navigation">
+                <li><a href="index.html" title="index">Home</a></li>
+                <li><a href="catalog.html" title="Catalog" class="current">Catalog</a></li>
+                <li><a href="contactus.html" title="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sort">
+            <p class="sort-description">Explore our beautiful collections and sort them to find your perfect bouquet.</p>
+            <label for="sort-options">Sort By:</label>
+            <select id="sort-options">
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+                <option value="popularity-desc">Most Popular</option>
+                <option value="new-arrivals">New Arrivals</option>
+            </select>
+        </section>
+
+        <section class="bouquet-grid" id="flower-list">
+            <!-- All bouquets will be dynamically injected here -->
+        </section>
+
+        <div id="flower-dialog" class="dialog">
+            <div class="dialog-content">
+                <span id="close-dialog" class="close">&times;</span>
+                <h2 id="dialog-title"></h2>
+                <p id="dialog-description"></p>
+                <p id="dialog-price"></p> <!-- Price will be displayed here -->
+                <a href="contactus.html" title="buy" id="buy-button" class="buy-button">Buy Now</a>
+            </div>
+        </div>
+        
+        <div class="bouquet-grid"></div> <!-- Your bouquet grid -->
+        
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p><strong>Ethereal Blooms</strong><br>
+                Av. De La Revolucion<br>
+                San Salvador, El Salvador<br>
+                <a href="mailto:info@timbuktucc.org">etherealblooms@gmail.com</a><br>
+                (503) 2299-0595
+                </p>
+            </div>
+            <div class="footer-center">
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube"></a>
+                <a href="https://x.com/?lang=en"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-right">
+                <p>&copy;<span id="currentyear"></span> Ethereal Blooms Flower Shop</p>    
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
