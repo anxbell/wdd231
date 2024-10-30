@@ -39,7 +39,7 @@
         "name": "Classic Floral Mix",
         "price": "$20",
         "spotlight": true,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet5.webp",
         "description": "A timeless combination of classic flowers like roses, lilies, and daisies, making it suitable for any event from weddings to birthdays.",
         "dateAdded": "2024-02-01",
         "season": "All Seasons"
@@ -48,7 +48,7 @@
         "name": "Whimsical Wildflowers",
         "price": "$22",
         "spotlight": false,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet6.webp",
         "description": "A charming bouquet of assorted wildflowers that captures the essence of nature. Perfect for casual settings and outdoor celebrations.",
         "dateAdded": "2024-02-05",
         "season": "Summer"
@@ -57,7 +57,7 @@
         "name": "Charming Orchid",
         "price": "$40",
         "spotlight": true,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet7.webp",
         "description": "A stunning display of vibrant orchids that add elegance and a touch of exotic beauty to any space. Ideal for upscale events or as a thoughtful gift.",
         "dateAdded": "2024-02-10",
         "season": "All Seasons"
@@ -66,7 +66,7 @@
         "name": "Peony Paradise",
         "price": "$32",
         "spotlight": false,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet8.webp",
         "description": "A lush arrangement of peonies that create a romantic atmosphere. This bouquet is perfect for anniversaries or weddings, conveying deep affection.",
         "dateAdded": "2024-02-15",
         "season": "Spring"
@@ -75,7 +75,7 @@
         "name": "Serene Garden",
         "price": "$45",
         "spotlight": true,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet9.webp",
         "description": "A beautiful mix of succulents and low-maintenance plants that require minimal care. Ideal for those who appreciate nature's beauty without the hassle.",
         "dateAdded": "2024-02-20",
         "season": "All Seasons"
@@ -84,7 +84,7 @@
         "name": "Delightful Daisy",
         "price": "$18",
         "spotlight": false,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet10.webp",
         "description": "A cheerful bouquet of daisies that symbolize innocence and purity. Perfect for brightening someone's day or as a charming addition to your home decor.",
         "dateAdded": "2024-02-25",
         "season": "Spring"
@@ -93,7 +93,7 @@
         "name": "Tulip Ensemble",
         "price": "$38",
         "spotlight": true,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet11.webp",
         "description": "An elegant arrangement of tulips in various colors, making it a stunning centerpiece for springtime celebrations and gatherings.",
         "dateAdded": "2024-03-01",
         "season": "Spring"
@@ -102,7 +102,7 @@
         "name": "Vibrant Bouquet",
         "price": "$27",
         "spotlight": false,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet12.webp",
         "description": "A colorful mix of seasonal flowers that brings joy and vibrancy to any space. Perfect for festive occasions or simply to brighten your day.",
         "dateAdded": "2024-03-05",
         "season": "Summer"
@@ -111,7 +111,7 @@
         "name": "Romantic Blooms",
         "price": "$42",
         "spotlight": true,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet13.webp",
         "description": "A lush and romantic arrangement of hydrangeas that evoke feelings of love and passion. Ideal for anniversaries or special occasions.",
         "dateAdded": "2024-03-10",
         "season": "Spring"
@@ -120,7 +120,7 @@
         "name": "Stunning Protea",
         "price": "$50",
         "spotlight": false,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet14.webp",
         "description": "A unique arrangement featuring striking protea flowers, perfect for those looking to make a bold statement in their decor.",
         "dateAdded": "2024-03-15",
         "season": "All Seasons"
@@ -129,7 +129,7 @@
         "name": "Graceful Lily",
         "price": "$33",
         "spotlight": true,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet15.webp",
         "description": "An elegant bouquet of calla lilies, symbolizing beauty and sophistication, perfect for weddings or upscale events.",
         "dateAdded": "2024-03-20",
         "season": "Spring"
@@ -138,7 +138,7 @@
         "name": "Chic Flower Crown",
         "price": "$15",
         "spotlight": false,
-        "image": "images/boquet1.webp",
+        "image": "images/boquet16.webp",
         "description": "A stylish flower crown made with fresh blooms, perfect for festivals, parties, and special occasions to add a whimsical touch.",
         "dateAdded": "2024-03-25",
         "season": "Summer"

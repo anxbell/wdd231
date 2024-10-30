@@ -11,28 +11,22 @@ async function fetchFlowers() {
 // Display flower types with membership level styling
 function displayFlowers(flowers) {
     const levelsContainer = document.getElementById('levels');
-    levelsContainer.innerHTML = ''; // Clear previous content
 
     if (levelsContainer) {
         flowers.forEach(flower => {
-            const flowerCard = createFlowerCard(flower); // Use the createFlowerCard function
+            const flowerCard = document.createElement('div');
+            flowerCard.classList.add('membership-card', flower.membershipLevel);
+
+            flowerCard.innerHTML = `
+                <h2>${flower.title}</h2>
+                <p>Learn More</p>
+            `;
+
+            flowerCard.addEventListener('click', () => displayFlowerDetails(flower));
+
             levelsContainer.appendChild(flowerCard);
         });
     }
-}
-
-function createFlowerCard(flower) {
-    const flowerCard = document.createElement('div');
-    flowerCard.classList.add('membership-card', flower.membershipLevel);
-
-    // Add the prefix "Flower Arrangement: " to the title
-    flowerCard.innerHTML = `
-        <h2>Flower Arrangement: ${flower.title}</h2>
-        <p>Learn More</p>
-    `;
-
-    flowerCard.addEventListener('click', () => displayFlowerDetails(flower));
-    return flowerCard;
 }
 
 function displayFlowerDetails(flower) {
@@ -50,7 +44,7 @@ function displayFlowerDetails(flower) {
             <ul>
                 ${flower.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
             </ul>
-            <h2>Weather Suitability</h2>
+            <h2>Weather Suitability</h>
             <p>${flower.weather}</p>
         </div>
     `;
@@ -69,18 +63,3 @@ function displayFlowerDetails(flower) {
 }
 
 fetchFlowers();
-
-// Set the current timestamp in the hidden input field before form submission
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('.designOne'); // Select your form
-    const timestampInput = document.getElementById('timestamp');
-
-    if (form && timestampInput) {
-        form.addEventListener('submit', () => {
-            timestampInput.value = Date.now(); // Set the current time in milliseconds
-            console.log('Timestamp set to:', timestampInput.value); // Log the timestamp value
-        });
-    }
-
-    fetchLevels(); // Call the function to fetch levels (make sure this function is defined elsewhere in your script)
-});

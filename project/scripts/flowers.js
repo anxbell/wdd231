@@ -27,7 +27,7 @@ function displaySpotlightBouquets(bouquets) {
             <img src="${bouquet.image}" alt="${bouquet.name}">
             <div class="item-name">${bouquet.name}</div>
             <div class="item-price">${bouquet.price}</div>
-            <a href="#" class="item-button">More info</a>
+            <a href="contactus.html" class="item-button">More info</a>
         `;
         spotlightContainer.appendChild(itemCard);
     });
