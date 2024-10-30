@@ -513,7 +513,7 @@ margin: 0;
 }
 
 .dialog-content {
-    background-color:#fadfdf;
+    background-color:#f8e8e8;
     margin: 15% auto; /* 15% from the top and centered */
     font-size: 1.2rem;
     padding: 20px;
@@ -538,14 +538,14 @@ margin: 0;
 }
 
 .buy-button {
-    background-color: #db7e8e; /* Green background */
+    background-color: #fda2a2; /* Green background */
     color: black; /* White text */
     border: none; /* No border */
     padding: 10px 20px; /* Padding */
     text-align: center; /* Centered text */
     text-decoration: none; /* No underline */
     display: inline-block; /* Inline-block element */
-    font-size: 16px; /* Font size */
+    font-size: 17px; /* Font size */
     margin-top: 10px; /* Space above the button */
     cursor: pointer; /* Pointer cursor on hover */
     border-radius: 6px;

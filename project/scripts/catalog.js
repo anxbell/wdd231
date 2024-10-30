@@ -40,7 +40,7 @@ function displayAllBouquets(bouquets) {
         const itemCard = document.createElement('div');
         itemCard.classList.add('item-card');
         itemCard.innerHTML = `
-            <img src="${bouquet.image}" alt="${bouquet.name}">
+            <img src="${bouquet.image}" alt="${bouquet.name}" loading="lazy">
             <div class="item-name">${bouquet.name}</div>
             <div class="item-price">${bouquet.price}</div>
             <a href="#" class="item-button">More info</a>
