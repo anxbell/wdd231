@@ -63,3 +63,10 @@ function displayFlowerDetails(flower) {
 }
 
 fetchFlowers();
+
+// Set current timestamp before form submission
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampInput = document.getElementById("timestamp");
+    const currentDate = new Date().getTime(); // current timestamp in milliseconds
+    timestampInput.value = currentDate;
+});

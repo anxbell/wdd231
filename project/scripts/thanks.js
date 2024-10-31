@@ -32,37 +32,27 @@ showInfo.innerHTML = `
     <p>We will be in touch with you soon to arrange the delivery of your blooms!</p>
 `;
 
-// Format and display the timestamp
-function formatTimestamp(timestamp) {
-    const date = new Date(parseInt(timestamp, 10)); 
-    if (isNaN(date)) {
-        console.error('Invalid date:', timestamp); 
-        return 'Invalid Date';
-    }
-
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1; // Months are 0-based in JavaScript
-    const day = date.getDate();
-    const hour = date.getHours();
-    const minute = date.getMinutes();
-    const second = date.getSeconds();
-
-    // Add leading zeros if necessary
-    const formattedHour = hour < 10 ? `0${hour}` : hour;
-    const formattedMinute = minute < 10 ? `0${minute}` : minute;
-    const formattedSecond = second < 10 ? `0${second}` : second;
-
-    return `${month}/${day}/${year} - ${formattedHour}:${formattedMinute}:${formattedSecond}`;
-}
-
-// Display the formatted timestamp
+// Get and display formatted timestamp on thank-you page
 const timestampDisplay = document.getElementById('timestamp-display');
-const timestampValue = show("timestamp");
-if (timestampValue) { // Check if the timestamp is available
+const timestampValue = show("timestamp"); // Retrieve timestamp from URL query
+
+if (timestampValue) {
     const formattedTimestamp = formatTimestamp(timestampValue);
     timestampDisplay.textContent = `Date: ${formattedTimestamp}`;
-    console.log('Formatted Timestamp:', formattedTimestamp); // Log the formatted timestamp
 } else {
-    timestampDisplay.textContent = 'Date: Not available'; // Fallback message if timestamp is missing
-    console.log('Timestamp value not found, displaying "Not available".'); // Log fallback message
+    timestampDisplay.textContent = 'Date: Not available';
 }
+
+// Timestamp formatting function
+function formatTimestamp(timestamp) {
+    const date = new Date(parseInt(timestamp, 10)); 
+    if (isNaN(date)) return 'Invalid Date';
+
+    return date.toLocaleString('en-US', {
+        month: '2-digit', day: '2-digit', year: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true
+    });
+}
+
+
+
